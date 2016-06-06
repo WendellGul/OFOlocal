@@ -37,6 +37,7 @@ public class Finder {
             while ((record = reader.readLine()) != null) {
                 map.put(record.substring(0, 5), record.substring(6));
             }
+            reader.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
